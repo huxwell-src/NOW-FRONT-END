@@ -66,24 +66,25 @@ const config = {
         ],
         pwaHead: [
           {
-            tagName: 'NOW!',
+            tagName: 'link',
             rel: 'icon',
-            href: '/img/Logo.png',
+            href: '/static/img/icon-192x192.png',
           },
           {
             tagName: 'link',
             rel: 'manifest',
-            href: '/manifest.webmanifest', // your PWA manifest
+            href: '/manifest.webmanifest',
           },
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(237, 189, 146)',
+            content: '#EDBD92',
           },
         ],
       },
     ],
   ],
+m  
 
 
   themeConfig:

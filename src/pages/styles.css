@@ -1,0 +1,233 @@
+:root {
+  --primary: 237, 189, 146;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: #FAFAFA;
+  color: rgb(var(--primary));
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #118ab2;
+  background-color: rgb(var(--primary));
+  color: #fff;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Alertes */
+.alert {
+  display: none;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #ffffff2f;
+  border-left: 4px solid #fafafae0;
+  padding: 0 12px;
+  margin-bottom: 14px;
+}
+.alert.success {
+  background-color: #2b934870;
+  border-color: #2b9348;
+}
+/* ------- */
+
+/* Loader: https://codepen.io/RRoberts/pen/pEXWEp */
+#loader {
+  display: none;
+}
+
+.loader{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+#loader span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #fff;
+  margin: 35px 5px;
+}
+#loader span:nth-child(1){
+  animation: bounce 1s ease-in-out infinite;
+}
+#loader span:nth-child(2){
+  animation: bounce 1s ease-in-out 0.33s infinite;
+}
+#loader span:nth-child(3){
+  animation: bounce 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes bounce{
+  0%, 75%, 100%{
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  25%{
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+/* ------ */
+
+.form-container {
+  flex-direction: column;
+}
+
+.form-container .title {
+  padding: 20px 0;
+  font-size: 40px;
+}
+
+.form-container .toggle-btn {
+  margin-left: auto;
+  margin-top: 8px;
+  opacity: .8;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+.form-container .toggle-btn:hover {
+  transition-duration: .3s;
+  opacity: 1;
+}
+
+.form.form-forgot {
+  flex-direction: row;
+}
+.form.form-forgot input {
+  padding: 0 12px;
+}
+.form.form-forgot button {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+.form.form-forgot svg {
+  fill: rgb(var(--primary));
+  opacity: 1;
+  margin: 0 4px;
+}
+
+.form {
+  width: 340px;
+  height: auto;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 3px #0000003b;
+}
+
+.form input, .form button {
+  outline: 0;
+  border: 0;
+  appearance: none;
+}
+
+.form button {
+  width: 100%;
+  height: 45px;
+  background-color: #fafafae0;
+  color: rgb(var(--primary));
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form button:hover, .form button:focus {
+  transition-duration: .3s;
+  background-color: #fafafac0;
+}
+.form button::selection {
+  background-color: transparent;
+}
+
+.form-container, .form-grp, .form, .form-grp input {
+  display: inline-flex;
+  align-items: center;
+}
+
+.form-grp, .form-grp input {
+  width: 100%;
+}
+
+.form-grp {
+  background-color: #ffffff1f;
+  height: 55px;
+  border-bottom: 1px solid #ccccccc2;
+}
+
+.form-grp:last-of-type {
+  border-bottom: none;
+}
+
+.form-grp input::placeholder {
+  color: #ffffff62;
+}
+
+.form-grp input {
+  color: #fff;
+  height: 100%;
+  font-size: 16px;
+  padding-right: 12px;
+  background-color: transparent;
+}
+.form-grp input:hover {
+  transition-duration: .3s;
+}
+
+.form-grp svg {
+  margin: 0 8px;
+  width: 50px;
+  height: auto;
+  fill: #fff;
+  opacity: .7;
+}
+
+.form-grp:hover svg, .form-grp:focus-within svg {
+  transition-duration: .3s;
+  opacity: 1;
+}
+
+.form-grp #password-icon {
+  height: 28px;
+}
+
+#login, #pass {
+  display: none;
+}
+#login.active, #pass.active {
+  display: inline-flex;
+}
+#pass {
+  flex-direction: column;
+}

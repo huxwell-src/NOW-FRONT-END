@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const autoprefixer = require('autoprefixer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -54,37 +55,40 @@ const config = {
     ],
   ],
 
+  stylesheets: [
+    {
+      href: 'https://cdn.tailwindcss.com/your-version/tailwind.min.css',
+      type: 'text/css',
+    },
+  ],
+
   plugins: [
     [
       '@docusaurus/plugin-pwa',
       {
         debug: true,
-        offlineModeActivationStrategies: [
-          'appInstalled',
-          'standalone',
-          'queryString',
-        ],
+        offlineModeActivationStrategies: ['appInstalled', 'queryString'],
         pwaHead: [
           {
             tagName: 'link',
             rel: 'icon',
-            href: '/static/img/icon-192x192.png',
+            href: './static/img/Logo.png',
           },
           {
             tagName: 'link',
             rel: 'manifest',
-            href: '/manifest.webmanifest',
+            href: './manifest.json',
           },
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: '#EDBD92',
+            content: '#ffffff',
           },
         ],
       },
     ],
-  ],  
-  
+  ], 
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -120,12 +124,6 @@ const config = {
             sidebarId: 'Profesor',
             position: 'left',
             label: 'Profesor',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
           },
         ],
       },

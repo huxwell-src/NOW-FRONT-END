@@ -1,0 +1,86 @@
+{
+  "alumnos": [
+    {
+      "email": "niko2000gb@gmail.com",
+      "contrasena": "qwerty"
+    },
+    {
+      "email": "laura.garcia@example.com",
+      "contrasena": "password456"
+    },
+    {
+      "email": "andres.torres@example.com",
+      "contrasena": "securepass789"
+    },
+    {
+      "email": "sofia.ramirez@example.com",
+      "contrasena": "secret1234"
+    },
+    {
+      "email": "mario.fernandez@example.com",
+      "contrasena": "pass12345"
+    }
+  ],
+  "profesores": [
+    {
+      "email": "carolina.rios@example.com",
+      "contrasena": "contrasela"
+    },
+    {
+      "email": "rodrigo.munoz@example.com",
+      "contrasena": "securepass789"
+    },
+    {
+      "email": "laura.navarro@example.com",
+      "contrasena": "password456"
+    },
+    {
+      "email": "fernando.torres@example.com",
+      "contrasena": "pass123"
+    }
+  ],
+  "administradores": [
+    {
+      "email": "maria.gonzalez@example.com",
+      "contrasena": "password456"
+    },
+    {
+      "email": "juan.perez@example.com",
+      "contrasena": "contraseña123"
+    },
+    {
+      "email": "pedro.rodriguez@example.com",
+      "contrasena": "securepass789"
+    },
+    {
+      "email": "ana.lopez@example.com",
+      "contrasena": "secret1234"
+    },
+    {
+      "email": "luisa.martinez@example.com",
+      "contrasena": "pass12345"
+    }
+  ],
+  "bodegueros": [
+    {
+      "email": "gabriel.rojas@example.com",
+      "contrasena": "adminpass"
+    },
+    {
+      "email": "carmen.vargas@example.com",
+      "contrasena": "admin1234"
+    },
+    {
+      "email": "javier.silva@example.com",
+      "contrasena": "admin789"
+    },
+    {
+      "email": "patricia.morales@example.com",
+      "contrasena": "admin456"
+    },
+    {
+      "email": "ricardo.herrera@example.com",
+      "contrasena": "admin123"
+    }
+  ]
+}
